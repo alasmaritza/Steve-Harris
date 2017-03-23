@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="workingTitle">
+
+<head>
+    <title>Working Title</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="/Scripts/css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/Scripts/css/Style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans+Condensed:300|Orbitron|Poiret+One|Rajdhani" rel="stylesheet">
+    <link rel="icon" href="/Content/images/eddie_2.png" sizes="32x32" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container containerHeader">
+            <ul>
+                <li ui-sref='Home'>Home</li>
+                <li ui-sref='Strange World'>Strange World</li>
+                <li ui-sref='Interview'>Steve Harris Interview</li>
+            </ul>
+        </div>
+    </header>
+    <div ui-view></div>
+    <footer>
+        <div class="container">
+            <h6>Up the Irons - alas.maritza.j@gmail.com</h6>
+            </div>
+    </footer>
+    <script src="/Scripts/js/angular.js"></script>
+    <script src="/Scripts/js/angular-ui-router.js"></script>
+    <script src="/Scripts/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/js/angular-route.min.js"></script>
+    <script type="text/javascript" src="/Scripts/app/WorkingModule.js"></script>
+    <script type="text/javascript" src="/Scripts/app/WorkingConfig.js"></script>
+    <script type="text/javascript" src="/Scripts/app/WorkingRun.js"></script>
+    <script type="text/javascript" src="/Scripts/app/WorkingController.js"></script>
+    <script type="text/javascript" src="/Scripts/app/StrangeController.js"></script>
+    <script type="text/javascript" src="/Scripts/app/StrangeFactory.js"></script>
+    <script type="text/javascript" src="/Scripts/app/InterviewController.js"></script>
+    
+</body>
+
+</html>

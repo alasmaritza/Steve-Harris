@@ -1,0 +1,12 @@
+<div>
+    <div class="page1">
+        <h4>{{inter.data.Title}}</h4>
+        <p style="text-align: center">{{inter.data.Date}}<br>{{inter.data.Website}}</p>
+        <br>
+        <div class="interview" ng-repeat="subject in inter.data.Questions">
+            <h5>{{subject.Subject}}</h5>
+            <p>{{subject.Response}}</p>
+            <br>
+        </div>
+    </div>
+</div>
