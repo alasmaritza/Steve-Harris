@@ -14,12 +14,6 @@ function config($urlRouterProvider, $stateProvider) {
         controller: 'workingController',
         title: 'Working Title | Home'
     })
-    .state ('Strange World', {
-        url: '/Strange-World',
-        templateUrl: 'StrangeWorld.html',
-        controller: 'strangeController as strange',
-        title: 'Working Title | Strange World'
-    })
     .state ('Interview', {
         url: '/Steve-Interview',
         templateUrl: 'Interview.html',

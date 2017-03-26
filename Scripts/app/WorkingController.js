@@ -4,16 +4,10 @@
         .module('workingTitle')
         .controller('workingController', workingController)
 
-    workingController.$inject = ['$scope', '$http'];
+    workingController.$inject = ['$scope', '$http', 'interviewFactory'];
 
-    function workingController($scope, $http) {
+    function workingController($scope, $http, interviewFactory) {
         var vm = this;
-
-        vm.open = open;
-
-        function open() {
-            console.log("Working.");
-        }
 
     }
 

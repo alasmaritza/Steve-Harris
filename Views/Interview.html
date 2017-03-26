@@ -1,9 +1,10 @@
-<div>
+<div>  
+    <img class="image" src="http://www.seymourduncan.com/blog/wp-content/uploads/Steve-Harris-Simon-Fowler-20032.jpg" width="100%" style="z-index: -1"> 
     <div class="page1">
-        <h4>{{inter.data.Title}}</h4>
-        <p style="text-align: center">{{inter.data.Date}}<br>{{inter.data.Website}}</p>
+        <h3>{{display.Title}}</h3>
+        <p style="text-align: center"><strong>{{display.Date}}</strong><br><em>{{display.Website}}</em></p>
         <br>
-        <div class="interview" ng-repeat="subject in inter.data.Questions">
+        <div class="interview" ng-repeat="subject in display.Interview">
             <h5>{{subject.Subject}}</h5>
             <p>{{subject.Response}}</p>
             <br>

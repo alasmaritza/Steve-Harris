@@ -10,14 +10,17 @@
     <link rel="icon" href="/Content/images/eddie_2.png" sizes="32x32" type="image/png">
 </head>
 
-<body>
+<body ng-controller="interviewController as inter">
     <header>
         <div class="container containerHeader">
             <ul>
                 <li ui-sref='Home'>Home</li>
-                <li ui-sref='Strange World'>Strange World</li>
-                <li ui-sref='Interview'>Steve Harris Interview</li>
+                <li><label class="dropDown">Steve Harris Interviews
+                <select ui-sref='Interview' ng-model="selectedInterview" ng-change="change(selectedInterview)" ng-options="item for item in interview"></select>
+            </label></li>
             </ul>
+
+            
         </div>
     </header>
     <div ui-view></div>
@@ -34,9 +37,10 @@
     <script type="text/javascript" src="/Scripts/app/WorkingConfig.js"></script>
     <script type="text/javascript" src="/Scripts/app/WorkingRun.js"></script>
     <script type="text/javascript" src="/Scripts/app/WorkingController.js"></script>
-    <script type="text/javascript" src="/Scripts/app/StrangeController.js"></script>
-    <script type="text/javascript" src="/Scripts/app/StrangeFactory.js"></script>
+    <!--<script type="text/javascript" src="/Scripts/app/StrangeController.js"></script>-->
     <script type="text/javascript" src="/Scripts/app/InterviewController.js"></script>
+    <script type="text/javascript" src="/Scripts/app/InterviewFactory.js"></script>
+    
     
 </body>
 

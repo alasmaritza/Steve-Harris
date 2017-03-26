@@ -7,6 +7,20 @@ ul {
     color: #007270;
 }
 
+.dropDown {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+    font-family: "Orbitron";
+    font-size: 20px;
+    color: #007270;
+}
+
+select {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 li {
     padding-left: 25px;
     opacity: 1;
@@ -16,7 +30,7 @@ li {
 .container {
     padding: 15px;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.5;
     width: 100%;
 }
 
@@ -34,7 +48,7 @@ h6 {
     text-align: center;
 }
 
-h4 {
+h3 {
     text-align: center;
 }
 
@@ -52,4 +66,9 @@ body {
 .interview {
     width: 40%;
     margin-left: 450px;
+}
+
+.image {
+    position: fixed;
+    opacity: 0.3;
 }
