@@ -16,7 +16,7 @@
             <ul>
                 <li ui-sref='Home'>Home</li>
                 <li><label class="dropDown">Steve Harris Interviews
-                <select ui-sref='Interview' ng-model="selectedInterview" ng-change="change(selectedInterview)" ng-options="item for item in interview"></select>
+                <select ui-sref='Interview' ng-model="selectedInterview" ng-change="change(selectedInterview)" ng-options="item as item.name + ' - ' + item.year for item in interview"></select>
             </label></li>
             </ul>
 

@@ -8,7 +8,7 @@
 
     function interviewController($scope, $http, interviewFactory) {
         var vm = this;
-        $scope.interview = ['1981', '1985', '1988', '1992', '2016'];
+        $scope.interview = [{'year':'1981', 'name':'Guitare Magazine'}, {'year':'1985', 'name':'Enfer Magazine'}, {'year':'1988', 'name': 'Guitar World'}, {'year':'1992', 'name': 'Kerrang'}, {'year':'2016', 'name': 'Blabbermouth'}];
         $scope.change = change;
         $scope.id = [];
         vm.data;
@@ -16,8 +16,8 @@
 
         interviewFactory.getInterview().then(displayInterview);
 
-        function change(year) {
-            $scope.id.push(year);
+        function change(date) {
+            $scope.id.push(date.year);
             if ($scope.id[1] == "2016") {
                 $scope.display = vm.data[0];
                 $scope.id.pop();
