@@ -4,13 +4,13 @@
         .module('workingTitle')
         .controller('strangeController', strangeController);
 
-    strangeController.$inject = ['$scope', '$http', 'lyricFactory'];
+    strangeController.$inject = ['$scope', '$http', 'interviewFactory'];
 
-    function strangeController($scope, $http, lyricFactory) {
+    function strangeController($scope, $http, interviewFactory) {
         var vm = this;
         vm.display = display;
 
-        lyricFactory.getLyric().then(display)
+        interviewFactory.getLyric().then(display)
 
         function display(data) {
             vm.title = data.data[0].Title;

@@ -53,8 +53,7 @@ h3 {
 }
 
 .page1 {
-    padding-top: 200px;
-    /*padding-bottom: 254px;*/
+    padding-top: 464px;
     padding-bottom: 149px;
 }
 
@@ -71,4 +70,8 @@ body {
 .image {
     position: fixed;
     opacity: 0.3;
+}
+
+a {
+    text-decoration: none !important;
 }

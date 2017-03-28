@@ -8,7 +8,22 @@
 
     function interviewController($scope, $http, interviewFactory) {
         var vm = this;
-        $scope.interview = [{'year':'1981', 'name':'Guitare Magazine'}, {'year':'1985', 'name':'Enfer Magazine'}, {'year':'1988', 'name': 'Guitar World'}, {'year':'1992', 'name': 'Kerrang'}, {'year':'2016', 'name': 'Blabbermouth'}];
+        $scope.interview = [{
+            'year': '1981',
+            'name': 'Guitare Magazine'
+        }, {
+            'year': '1985',
+            'name': 'Enfer Magazine'
+        }, {
+            'year': '1988',
+            'name': 'Guitar World'
+        }, {
+            'year': '1992',
+            'name': 'Kerrang'
+        }, {
+            'year': '2016',
+            'name': 'Blabbermouth'
+        }];
         $scope.change = change;
         $scope.id = [];
         vm.data;
