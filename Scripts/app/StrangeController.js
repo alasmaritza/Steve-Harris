@@ -13,13 +13,13 @@
         interviewFactory.getLyric().then(display)
 
         function display(data) {
-            vm.title = data.data[0].Title;
-            var lyric = data.data[0].Lyric;
+            vm.title = data.data[1].Title;
+            vm.lyric = data.data[1].Lyric;
 
-            var song = JSON.stringify(lyric)
-            var song1 = song.replace(/\./g, "<br><br>");
+            // var song = JSON.stringify(lyric)
+            //var song1 = song.replace(/\./g, "<br><br>");
 
-            $('.song').append(song1);
+            // $('.song').append(song);
 
         }
 
