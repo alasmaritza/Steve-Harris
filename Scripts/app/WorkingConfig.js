@@ -24,7 +24,7 @@
                 url: '/Strange-World',
                 templateUrl: 'StrangeWorld.html',
                 controller: 'strangeController as strange',
-                title: '\'Arry | Mission from \'Arry'
+                title: 'Mission from \'Arry'
             })
     }
 
